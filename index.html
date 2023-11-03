@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prisoner's Dilemma</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  #scenario {
+    margin-bottom: 30px;
+  }
+  #result, #activities {
+    margin-top: 20px;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <h1>Prisoner's Dilemma</h1>
+  <div id="scenario">
+    <p>You're one of two bank robbers. Both of you have been arrested and are being interrogated in separate rooms.</p>
+    <p>The authorities have no other witnesses, and can only prove the case against you if they can convince at least one of you to betray your accomplice and testify to the crime.</p>
+    <p>Both of you are faced with the choice to cooperate with your accomplice and remain silent or to defect from the gang and testify for the prosecution.</p>
+    <p>If you both co-operate and remain silent, then the authorities will only be able to convict you on a lesser charge resulting in 1 day in jail for each.</p>
+    <p>If one testifies and the other does not, then the one who testifies will go free and the other will get 3 days.</p>
+    <p>However, if both testify against the other, each will get 2 days in jail for being partly responsible for the robbery.</p>
+  </div>
+  <p>Make your choice:</p>
+  <button id="betray">Snitch</button>
+  <button id="silent">Don't snitch</button>
+  <div id="result"></div>
+  <div id="activities" class="hidden">
+    <p>Activities:</p>
+    <ul id="activitiesList"></ul>
+  </div>
+  <button id="restart" class="hidden">Try again</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
